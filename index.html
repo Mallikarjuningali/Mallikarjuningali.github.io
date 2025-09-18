@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mallikarjun Ingali - Portfolio</title>
-    <!-- Tailwind CSS CDN for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom CSS for Inter font and smooth scrolling */
@@ -132,12 +131,9 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header & Navigation Bar -->
     <header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <!-- Logo/Name with a hover effect -->
             <a href="#hero" class="text-2xl font-bold text-blue-600 rounded-lg p-2 hover:bg-blue-50 transition duration-300">Mallikarjun Ingali</a>
-            <!-- Desktop Navigation Links -->
             <ul class="hidden md:flex space-x-6">
                 <li><a href="#about" class="text-gray-600 hover:text-blue-600 hover:scale-105 hover:shadow-md transition duration-300 font-medium rounded-lg px-3 py-2 hover:bg-blue-50">About</a></li>
                 <li><a href="#skills" class="text-gray-600 hover:text-blue-600 hover:scale-105 hover:shadow-md transition duration-300 font-medium rounded-lg px-3 py-2 hover:bg-blue-50">Skills</a></li>
@@ -145,18 +141,14 @@
                 <li><a href="#projects" class="text-gray-600 hover:text-blue-600 hover:scale-105 hover:shadow-md transition duration-300 font-medium rounded-lg px-3 py-2 hover:bg-blue-50">Projects</a></li>
                 <li><a href="#contact" class="text-gray-600 hover:text-blue-600 hover:scale-105 hover:shadow-md transition duration-300 font-medium rounded-lg px-3 py-2 hover:bg-blue-50">Contact</a></li>
             </ul>
-            <!-- Mobile Menu Button (Hamburger Icon) -->
             <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <!-- Mobile Menu Overlay (hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-6">
-            <!-- Close button for mobile menu -->
             <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600 hover:text-blue-600 focus:outline-none">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
-            <!-- Mobile Navigation Links -->
             <ul class="text-center text-2xl space-y-6">
                 <li><a href="#about" class="block text-gray-700 hover:text-blue-600 hover:scale-105 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a></li>
                 <li><a href="#skills" class="block text-gray-700 hover:text-blue-600 hover:scale-105 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a></li>
@@ -168,35 +160,28 @@
     </header>
 
     <main class="pt-20">
-        <!-- Hero Section: The main welcoming section -->
         <section id="hero" class="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white min-h-screen flex items-center justify-center p-8 overflow-hidden rounded-b-3xl shadow-xl">
-            <!-- Decorative background shapes for a modern, dynamic feel -->
             <div class="absolute top-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
             <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full transform translate-x-1/2 translate-y-1/2"></div>
 
             <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 max-w-5xl mx-auto text-center md:text-left">
-                <!-- Profile Picture (Left on larger screens, Top on smaller) -->
                 <div class="mb-8 md:mb-0 md:flex-shrink-0">
                     <img src="https://github.com/Mallikarjuningali/Mallikarjuningali.github.io/blob/main/assets/cert/profile_photo.jpg?raw=true" alt="Mallikarjun Ingali Profile Picture" class="w-80 h-96 rounded-lg mx-auto border-4 border-white shadow-lg object-cover">
                 </div>
-                <!-- Text Content (Right on larger screens, Bottom on smaller) -->
                 <div class="md:w-2/3">
                     <h1 id="hero-heading" class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg"></h1>
                     <p id="hero-subheading-1" class="text-2xl md:text-3xl font-light mb-8 drop-shadow-md"></p>
                     <p id="hero-subheading-2" class="text-lg md:text-xl font-light mb-8 drop-shadow-md"></p>
-                    <!-- Call to action button -->
                     <a href="#projects" id="hero-button" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transform hover:scale-105 transition duration-300 shadow-lg">View My Work</a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="container mx-auto px-4 py-16 md:py-24">
             <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100">
                 <h2 class="text-4xl font-bold text-center text-gray-900 mb-10">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center md:space-x-10">
                     <div class="md:w-1/3 mb-8 md:mb-0">
-                        <!-- Placeholder image for About Me section -->
                         <img src="https://placehold.co/300x300/E0F2FE/3B82F6?text=About+Me" alt="About Me Image" class="rounded-xl shadow-md w-full h-auto object-cover">
                     </div>
                     <div class="md:w-2/3 text-lg text-gray-700 leading-relaxed">
@@ -208,36 +193,30 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="bg-blue-50 py-16 md:py-24 rounded-t-3xl shadow-inner">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">My Skills</h2>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-                    <!-- Skill Card: Java -->
                     <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
                         <svg class="w-12 h-12 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Java</h3>
                         <p class="text-gray-600 text-sm">Core Java, OOPs, Collections, Multithreading, Generics.</p>
                     </div>
-                    <!-- Skill Card: AWS -->
                     <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
                         <svg class="w-12 h-12 text-orange-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">AWS</h3>
                         <p class="text-gray-600 text-sm">EC2, S3, VPC, IAM, NAT Gateway.</p>
                     </div>
-                    <!-- Skill Card: Databases -->
                     <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
                         <svg class="w-12 h-12 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7h16M4 7l-2-2m2 2l2-2m7 5v4m-4-4v4m-4-4v4m-4-4v4"></path></svg>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Databases</h3>
                         <p class="text-gray-600 text-sm">MySQL, Firebase, Supabase.</p>
                     </div>
-                    <!-- Skill Card: Web Technologies -->
                     <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
                         <svg class="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5a3 3 0 00-3-3H9a3 3 0 00-3 3v5m6 0h.01M12 10h-.01"></path></svg>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Web Technologies</h3>
                         <p class="text-gray-600 text-sm">JDBC, Servlets, JSP.</p>
                     </div>
-                    <!-- Skill Card: Tools -->
                     <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
                         <svg class="w-12 h-12 text-purple-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2"></path></svg>
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Tools</h3>
@@ -247,12 +226,10 @@
             </div>
         </section>
 
-        <!-- Certifications Section -->
         <section id="certifications" class="container mx-auto px-4 py-16 md:py-24">
             <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100">
                 <h2 class="text-4xl font-bold text-center text-gray-900 mb-10">Certifications</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Certification 1 -->
                     <div class="certification-card flex items-start space-x-4 bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer"
                          data-cert-image="https://github.com/Mallikarjuningali/Mallikarjuningali.github.io/blob/main/assets/cert/Devops.png?raw=true">
                         <svg class="w-8 h-8 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -261,7 +238,6 @@
                             <p class="text-gray-700">Issued by NASSCOM</p>
                         </div>
                     </div>
-                    <!-- Certification 2 -->
                     <div class="certification-card flex items-start space-x-4 bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer"
                          data-cert-image="https://github.com/Mallikarjuningali/Mallikarjuningali.github.io/blob/main/assets/cert/app%20dev.png?raw=true">
                         <svg class="w-8 h-8 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -270,7 +246,6 @@
                             <p class="text-gray-700">Issued by Udemy</p>
                         </div>
                     </div>
-                    <!-- Certification 3 -->
                     <div class="certification-card flex items-start space-x-4 bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer"
                          data-cert-image="https://github.com/Mallikarjuningali/Mallikarjuningali.github.io/blob/main/assets/cert/web%20dev.png?raw=true">
                         <svg class="w-8 h-8 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -283,12 +258,10 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="bg-blue-50 py-16 md:py-24 rounded-t-3xl shadow-inner">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">My Projects</h2>
 
-                <!-- Project Filter Buttons (JavaScript will handle filtering) -->
                 <div class="flex flex-wrap justify-center gap-4 mb-10">
                     <button class="filter-button px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-blue-100 transition duration-300 active" data-filter="all">All</button>
                     <button class="filter-button px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-blue-100 transition duration-300" data-filter="java">Java</button>
@@ -298,7 +271,6 @@
                 </div>
 
                 <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project Card 1: Tailmate App -->
                     <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300" data-category="java web">
                         <img src="https://placehold.co/600x400/A7F3D0/047857?text=Tailmate+App" alt="Tailmate App Thumbnail" class="w-full h-56 object-cover">
                         <div class="p-6">
@@ -318,7 +290,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card : 2 Event Management System -->
                     <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300" data-category="java web">
                         <img src="https://placehold.co/600x400/D1FAE5/065F46?text=Event+System" alt="Event Management System Thumbnail" class="w-full h-56 object-cover">
                         <div class="p-6">
@@ -338,7 +309,6 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 3 : AI Fault Detection System -->
                     <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300" data-category="ml java">
                         <img src="https://placehold.co/600x400/FFE4E6/E11D48?text=AI+Fault+Detection" alt="AI Fault Detection System Thumbnail" class="w-full h-56 object-cover">
                         <div class="p-6">
@@ -357,38 +327,71 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300" data-category="cloud">
+                        <img src="https://placehold.co/600x400/FEE2E2/EF4444?text=EC2+Automation" alt="EC2 Auto Start/Stop Thumbnail" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">EC2 Auto Start/Stop System</h3>
+                            <p class="text-gray-600 mb-4">A cost-optimization solution that automates the starting and stopping of EC2 instances using AWS Lambda and EventBridge, reducing operational costs.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">AWS Lambda</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">EventBridge</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Cost Optimization</span>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <a href="#" target="_blank" class="inline-flex items-center space-x-2 bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 hover:bg-gray-900 shadow-md">
+                                    <svg class="w-6 h-6 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300" data-category="cloud web">
+                        <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Portfolio" alt="Portfolio" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Containerized Portfolio Website</h3>
+                            <p class="text-gray-600 mb-4">Deployed a portfolio website in a serverless containerized environment using Docker, AWS ECS Fargate, and an Application Load Balancer for high availability.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Docker</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">AWS ECS Fargate</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">ALB</span>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <a href="https://www.linkedin.com/posts/mallikarjun-ingali-994010327_aws-fargate-ecs-activity-7373758896328507392-i7ZM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJnxoABfQqJ1pWF_4p8VRR4r3NPfNO9Zx0" target="_blank" class="inline-flex items-center space-x-2 bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 hover:bg-gray-900 shadow-md">
+                                    <svg class="w-6 h-6 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="bg-gray-800 text-white py-16 md:py-24 rounded-t-3xl shadow-inner">
             <div class="container mx-auto px-4 text-center">
                 <h2 class="text-4xl font-bold mb-12">Get In Touch</h2>
                 <p class="text-lg max-w-2xl mx-auto mb-10">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
 
                 <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
-                    <!-- Email Link -->
                     <a href="mailto:mallikarjuningali809@gmail.com" class="flex items-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg transform hover:scale-105">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         <span>mallikarjuningali809@gmail.com</span>
                     </a>
-                    <!-- Phone Link -->
                     <a href="tel:+919986989376" class="flex items-center space-x-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg transform hover:scale-105">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         <span>+91 9986989376</span>
                     </a>
                 </div>
 
-                <!-- Social Media Links -->
                 <div class="flex justify-center space-x-6 mb-10">
-                    <!-- LinkedIn Link -->
                     <a href="https://linkedin.com/in/mallikarjun-ingali-994010327" target="_blank" class="text-gray-300 hover:text-blue-400 transition duration-300">
                         <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 1 0 0-4 2 2 0 0 0 0 4z"/>
                         </svg>
                     </a>
-                    <!-- GitHub Link -->
                     <a href="https://github.com/Mallikarjuningali" target="_blank" class="text-gray-300 hover:text-gray-400 transition duration-300">
                         <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.385.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.332-1.758-1.332-1.758-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.804 1.305 3.49.998.108-.775.418-1.305.762-1.605-2.665-.304-5.464-1.332-5.464-5.93 0-1.31.465-2.38 1.235-3.22-.125-.304-.535-1.52.117-3.176 0 0 1.008-.323 3.301 1.23.957-.266 1.983-.4 3.003-.404 1.02.004 2.046.138 3.003.404 2.29-1.553 3.297-1.23 3.297-1.23.652 1.656.242 2.872.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.8 5.62-5.474 5.92.42.36.81.1.81 1.018 0 1.018-.01 1.837-.01 2.09 0 .318.219.69.829.575C20.565 21.802 24 17.305 24 12c0-6.628-5.372-12-12-12z"/>
@@ -399,7 +402,6 @@
         </section>
     </main>
 
-    <!-- Certificate Modal Overlay -->
     <div id="certificate-modal" class="modal-overlay">
         <div class="modal-content rounded-xl shadow-2xl">
             <button class="modal-close-button">&times;</button>
@@ -407,7 +409,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8 text-center">
         <div class="container mx-auto px-4">
             <p>&copy; <span id="current-year"></span> Mallikarjun Ingali. All rights reserved.</p>
